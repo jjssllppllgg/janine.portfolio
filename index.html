@@ -1,0 +1,2291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janine Grace | Healthcare Customer Support Portfolio</title>
+    <meta
+      name="description"
+      content="Personal brand portfolio of Janine Grace, a Customer Service Representative specializing in healthcare customer support, insurance assistance, and data management."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Ambient Background Glows & Abstract Curves -->
+    <div class="ambient-canvas" aria-hidden="true">
+      <div class="glow-orb glow-orb--purple"></div>
+      <div class="glow-orb glow-orb--blue"></div>
+      <div class="glow-orb glow-orb--mid"></div>
+    </div>
+    <canvas class="cursor-trail" id="cursorTrail" aria-hidden="true"></canvas>
+    <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+
+    <!-- Fixed Top Navigation Bar -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a href="#hero" class="brand" aria-label="Janine Grace Y. Plaga Home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg
+              width="40"
+              height="32"
+              viewBox="0 0 46 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="jpLogoGrad"
+                  x1="0"
+                  y1="0"
+                  x2="46"
+                  y2="36"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stop-color="#C084FC" />
+                  <stop offset="50%" stop-color="#8B5CF6" />
+                  <stop offset="100%" stop-color="#38BDF8" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M16.5 6L12.6 24.2C11.9 27.6 9.5 29.8 6.1 29.8C3.9 29.8 2.4 28.9 1.6 27.4"
+                stroke="url(#jpLogoGrad)"
+                stroke-width="3.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.5 6H21.2"
+                stroke="url(#jpLogoGrad)"
+                stroke-width="3.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M21 29.5L26 6H34.5C39.2 6 42 8.7 41.2 13C40.4 17.3 36.8 19.8 32 19.8H23.2"
+                stroke="url(#jpLogoGrad)"
+                stroke-width="3.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="brand__name">Janine Plaga</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="#about" class="nav-link active">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#tools" class="nav-link">Tools</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="navbar__actions">
+          <a href="#contact" class="btn btn--outline-pill">
+            <span>Let's Connect</span>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </a>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileDrawer"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <nav class="mobile-drawer__nav" aria-label="Mobile Navigation">
+          <a href="#about" class="mobile-link">About</a>
+          <a href="#services" class="mobile-link">Services</a>
+          <a href="#experience" class="mobile-link">Experience</a>
+          <a href="#tools" class="mobile-link">Tools</a>
+          <a href="#education-skills" class="mobile-link"
+            >Education &amp; Skills</a
+          >
+          <a href="#contact" class="mobile-link">Contact</a>
+          <a href="#contact" class="btn btn--gradient btn--full mobile-cta"
+            >Let's Connect</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <!-- Decorative Hero Curves & Graphics matching reference aesthetic -->
+        <div class="hero__bg-art" aria-hidden="true">
+          <div class="dot-matrix"></div>
+          <svg
+            class="hero__wave-left"
+            viewBox="0 0 420 420"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M-60 40C45 140 85 280 230 370C310 418 390 425 440 420H-60V40Z"
+              fill="url(#leftWaveGrad)"
+              fill-opacity="0.24"
+            />
+            <defs>
+              <linearGradient
+                id="leftWaveGrad"
+                x1="0"
+                y1="80"
+                x2="360"
+                y2="420"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stop-color="#A855F7" />
+                <stop offset="100%" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg
+            class="hero__wave-right"
+            viewBox="0 0 650 560"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M160 560C190 410 315 305 470 250C560 218 625 145 650 60V560H160Z"
+              fill="url(#rightWave1)"
+              fill-opacity="0.34"
+            />
+            <path
+              d="M70 560C155 465 280 410 435 375C545 350 615 285 650 205V560H70Z"
+              fill="url(#rightWave2)"
+              fill-opacity="0.48"
+            />
+            <defs>
+              <linearGradient
+                id="rightWave1"
+                x1="180"
+                y1="220"
+                x2="650"
+                y2="540"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stop-color="#7C3AED" />
+                <stop offset="100%" stop-color="#2563EB" />
+              </linearGradient>
+              <linearGradient
+                id="rightWave2"
+                x1="120"
+                y1="360"
+                x2="650"
+                y2="560"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0%" stop-color="#A855F7" />
+                <stop offset="100%" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg
+            class="hero__pulse-heart"
+            viewBox="0 0 120 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M60 96C60 96 14 68 14 35C14 19 26.5 8 41 8C49.5 8 56.5 12.2 60 18.2C63.5 12.2 70.5 8 79 8C93.5 8 106 19 106 35C106 68 60 96 60 96Z"
+              stroke="rgba(165, 180, 252, 0.25)"
+              stroke-width="3.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 49H40L47 33L56 67L65 41L71 53H98"
+              stroke="rgba(165, 180, 252, 0.35)"
+              stroke-width="3.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <div class="container hero__grid">
+          <!-- Left Column: Intro, Name, Role, Highlights, CTA -->
+          <div class="hero__content">
+            <div class="hero__greeting-row">
+              <span class="hero__script">Hi, I'm</span>
+              <svg
+                class="hero__swoop"
+                viewBox="0 0 180 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 22C58 3 122 3 176 20"
+                  stroke="url(#swoopGrad)"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="swoopGrad"
+                    x1="4"
+                    y1="22"
+                    x2="176"
+                    y2="20"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0%" stop-color="#A855F7" />
+                    <stop offset="65%" stop-color="#60A5FA" />
+                    <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <h1 class="hero__name">
+              JANINE <span class="text-gradient">GRACE</span>
+            </h1>
+
+            <p class="hero__role">Customer Service Representative</p>
+            <div class="hero__divider" aria-hidden="true"></div>
+
+            <p class="hero__tagline">
+              Dedicated to providing reliable customer support through clear
+              communication, attention to detail, and efficient healthcare
+              assistance;
+            </p>
+
+            <!-- Four Service Highlight Cards -->
+            <div
+              class="hero__highlights"
+              role="list"
+              aria-label="Core Focus Areas"
+            >
+              <div class="highlight-card" role="listitem">
+                <span
+                  class="highlight-card__icon highlight-card__icon--purple"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                    <path
+                      d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+                    />
+                  </svg>
+                </span>
+                <span class="highlight-card__label">Customer Support</span>
+              </div>
+
+              <div class="highlight-card" role="listitem">
+                <span
+                  class="highlight-card__icon highlight-card__icon--blue"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 21s-7-4.5-9.5-9C.5 8.5 2.5 4 6.8 4c2.4 0 4.2 1.3 5.2 3 1-1.7 2.8-3 5.2-3C21.5 4 23.5 8.5 21.5 12 19 16.5 12 21 12 21z"
+                    />
+                    <path d="M12 8v6M9 11h6" />
+                  </svg>
+                </span>
+                <span class="highlight-card__label">Healthcare Assistance</span>
+              </div>
+
+              <div class="highlight-card" role="listitem">
+                <span
+                  class="highlight-card__icon highlight-card__icon--violet"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </span>
+                <span class="highlight-card__label">Insurance Support</span>
+              </div>
+
+              <div class="highlight-card" role="listitem">
+                <span
+                  class="highlight-card__icon highlight-card__icon--cyan"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  </svg>
+                </span>
+                <span class="highlight-card__label">Data Management</span>
+              </div>
+            </div>
+
+            <div class="hero__cta-row">
+              <a href="#about" class="btn btn--gradient btn--lg">
+                <span>Explore My Portfolio</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn--glass btn--lg">Contact Me</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Janine's Portrait Cutout Frame -->
+          <div class="hero__visual">
+            <div class="portrait-stage">
+              <div class="portrait-glow" aria-hidden="true"></div>
+              <canvas
+                class="portrait-particles"
+                id="portraitParticles"
+                aria-hidden="true"
+              ></canvas>
+              <div class="portrait-ring" aria-hidden="true"></div>
+              <span
+                class="availability-pulse"
+                id="availabilityPulse"
+                aria-hidden="true"
+              ></span>
+
+              <div class="portrait-cutout" id="portraitContainer">
+                <!-- Uses Janine's transparent portrait cutout -->
+                <img
+                  src="assets/janine-portrait.png"
+                  alt="Janine Grace, Customer Service Representative"
+                  class="portrait-cutout__img"
+                  id="janinePortraitImg"
+                />
+                <!-- Clean non-face monogram fallback displayed only when the resume photo file has not yet been provided -->
+                <div class="portrait-fallback" id="portraitFallback" hidden>
+                  <div class="portrait-fallback__badge">
+                    <svg
+                      width="56"
+                      height="44"
+                      viewBox="0 0 46 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="jpFallbackGrad"
+                          x1="0"
+                          y1="0"
+                          x2="46"
+                          y2="36"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#C084FC" />
+                          <stop offset="50%" stop-color="#8B5CF6" />
+                          <stop offset="100%" stop-color="#38BDF8" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M16.5 6L12.6 24.2C11.9 27.6 9.5 29.8 6.1 29.8C3.9 29.8 2.4 28.9 1.6 27.4"
+                        stroke="url(#jpFallbackGrad)"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 6H21.2"
+                        stroke="url(#jpFallbackGrad)"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M21 29.5L26 6H34.5C39.2 6 42 8.7 41.2 13C40.4 17.3 36.8 19.8 32 19.8H23.2"
+                        stroke="url(#jpFallbackGrad)"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p class="portrait-fallback__title">Janine Grace</p>
+                  <p class="portrait-fallback__note">
+                    Place Janine's resume photo at
+                    <code>assets/mypicture.png</code> to display her portrait
+                    cutout here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">About Me</span>
+            <h2 class="section-title">
+              Detail-Oriented
+              <span class="text-gradient">Healthcare Support</span> Specialist
+            </h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="glass-card about__bio reveal">
+              <p class="about__lead">
+                I am <strong>Janine Grace</strong>, a dedicated Customer Service
+                Representative who delivers customer service in a healthcare
+                setting by managing inquiries through voice and non-voice
+                channels.
+              </p>
+              <p>
+                With structured healthcare customer support training and
+                production experience at Teleperformance, I utilize internal
+                platforms to access and review information, address
+                insurance-related concerns, verify member eligibility, and
+                clarify claim, appeal, coverage, and benefit details.
+              </p>
+              <p>
+                Whether assisting callers on inbound and outbound calls or
+                responding to online inquiries, I focus on clear communication,
+                accurate interaction documentation, and strict adherence to
+                company policies and confidentiality standards.
+              </p>
+
+              <div class="about__tags" aria-label="Core Focus Areas">
+                <span class="pill-tag">Healthcare Customer Inquiries</span>
+                <span class="pill-tag">Basic Health Insurance Concepts</span>
+                <span class="pill-tag">Customer Communication</span>
+                <span class="pill-tag">Information Retrieval</span>
+                <span class="pill-tag">Documentation &amp; Record Updates</span>
+                <span class="pill-tag">Confidentiality &amp; Data Privacy</span>
+              </div>
+            </div>
+
+            <div class="about__pillars">
+              <article class="glass-card pillar-card reveal">
+                <div
+                  class="pillar-card__icon pillar-card__icon--purple"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Clear &amp; Empathetic Communication</h3>
+                  <p>
+                    Handling inbound, outbound, online, and written inquiries
+                    with calm professionalism and active listening.
+                  </p>
+                </div>
+              </article>
+
+              <article class="glass-card pillar-card reveal">
+                <div
+                  class="pillar-card__icon pillar-card__icon--blue"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                    />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Accurate Documentation &amp; Retrieval</h3>
+                  <p>
+                    Retrieving member and provider details efficiently while
+                    maintaining clean, timely customer interaction records.
+                  </p>
+                </div>
+              </article>
+
+              <article class="glass-card pillar-card reveal">
+                <div
+                  class="pillar-card__icon pillar-card__icon--cyan"
+                  aria-hidden="true"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Confidentiality &amp; Privacy First</h3>
+                  <p>
+                    Safeguarding sensitive healthcare information in alignment
+                    with privacy protocols and quality guidelines.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <span class="section-eyebrow">What I Offer</span>
+            <h2 class="section-title">
+              Specialized <span class="text-gradient">Support Services</span>
+            </h2>
+            <p class="section-subtitle">
+              Dependable assistance tailored for healthcare virtual support,
+              customer care, insurance workflows, and administrative operations.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <article class="glass-card service-card reveal">
+              <div class="service-card__icon icon-grad-1" aria-hidden="true">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path
+                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+                  />
+                </svg>
+              </div>
+              <h3>Customer Service Support</h3>
+              <p>
+                Delivering responsive, empathetic front-line assistance that
+                resolves inquiries clearly and builds lasting customer trust.
+              </p>
+            </article>
+
+            <article class="glass-card service-card reveal">
+              <div class="service-card__icon icon-grad-2" aria-hidden="true">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 21s-7-4.5-9.5-9C.5 8.5 2.5 4 6.8 4c2.4 0 4.2 1.3 5.2 3 1-1.7 2.8-3 5.2-3C21.5 4 23.5 8.5 21.5 12 19 16.5 12 21 12 21z"
+                  />
+                  <path d="M12 8v6M9 11h6" />
+                </svg>
+              </div>
+              <h3>Healthcare Customer Assistance</h3>
+              <p>
+                Clarifying healthcare coverage, benefits, and service inclusions
+                while guiding members with accuracy and confidentiality.
+              </p>
+            </article>
+
+            <article class="glass-card service-card reveal">
+              <div class="service-card__icon icon-grad-3" aria-hidden="true">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <h3>Basic Insurance Support</h3>
+              <p>
+                Verifying eligibility, reviewing members' coverage details, and
+                communicating claim and appeal status updates clearly.
+              </p>
+            </article>
+
+            <article class="glass-card service-card reveal">
+              <div class="service-card__icon icon-grad-4" aria-hidden="true">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <h3>Voice and Non-Voice Support</h3>
+              <p>
+                Managing inbound and outbound calls alongside email, online
+                portal, and written customer inquiries with consistent tone.
+              </p>
+            </article>
+
+            <article class="glass-card service-card reveal">
+              <div class="service-card__icon icon-grad-5" aria-hidden="true">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                  />
+                  <path
+                    d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                  />
+                </svg>
+              </div>
+              <h3>Data Entry and Documentation</h3>
+              <p>
+                Logging customer interactions, updating account records, and
+                organizing structured notes with strong attention to detail.
+              </p>
+            </article>
+
+            <article class="glass-card service-card reveal">
+              <div class="service-card__icon icon-grad-6" aria-hidden="true">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                  <path d="M9 16l2 2 4-4" />
+                </svg>
+              </div>
+              <h3>Administrative Assistance</h3>
+              <p>
+                Supporting daily operational workflows through information
+                retrieval, task prioritization, and organized record
+                coordination.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Experience Section -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <span class="section-eyebrow">Career Journey</span>
+            <h2 class="section-title">
+              Professional <span class="text-gradient">Experience</span>
+            </h2>
+            <p class="section-subtitle">
+              Healthcare customer support experience at Teleperformance across
+              voice and non-voice channels.
+            </p>
+          </div>
+
+          <div class="experience-card glass-card reveal">
+            <div class="experience-card__header">
+              <div>
+                <span class="experience-card__tag">Healthcare Support</span>
+                <h3>Customer Service Representative</h3>
+                <p class="experience-card__subtitle">Teleperformance</p>
+              </div>
+              <span class="experience-card__period"
+                >Nov 2025 &ndash; Dec 2026</span
+              >
+            </div>
+            <div class="experience-card__roles">
+              <span class="experience-card__role-title"
+                >Roles &amp; Responsibilities</span
+              >
+              <ul class="roles-list">
+                <li>
+                  Reviewed claim records and communicated claim status and
+                  processing details.
+                </li>
+                <li>
+                  Examined appeal records and clarified the status of appeal
+                  requests.
+                </li>
+                <li>
+                  Provided healthcare coverage, benefits, and service
+                  inclusions.
+                </li>
+                <li>
+                  Verified eligibility and reviewed members' coverage
+                  information.
+                </li>
+                <li>
+                  Managed inbound and outbound calls and handled online
+                  inquiries.
+                </li>
+                <li>
+                  Navigated internal systems and documented customer
+                  interactions.
+                </li>
+                <li>
+                  Observed data privacy policies when handling confidential
+                  information.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools and Systems Section -->
+      <section class="section" id="tools">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <span class="section-eyebrow">Systems Familiarity</span>
+            <h2 class="section-title">
+              Tools &amp; <span class="text-gradient">Healthcare Systems</span>
+            </h2>
+            <p class="section-subtitle">
+              Platforms and portals navigated during healthcare customer support
+              training and production workflows.
+            </p>
+          </div>
+
+          <div class="tools-conveyor reveal">
+            <div class="tools-conveyor__track" id="toolsTrack">
+              <div class="tools-conveyor__group">
+                <!-- Healthcare Support -->
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="healthcare"
+                >
+                  <span class="tool-card__cat">Healthcare Support</span>
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoCustomerConnect"
+                          x1="8"
+                          y1="8"
+                          x2="80"
+                          y2="64"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#C084FC" />
+                          <stop offset="100%" stop-color="#6366F1" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(168, 85, 247, 0.14)"
+                        stroke="rgba(192, 132, 252, 0.35)"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M27 28C27 21.925 31.925 17 38 17H50C56.075 17 61 21.925 61 28C61 34.075 56.075 39 50 39H41L33 46V38.2C29.4 36.5 27 32.6 27 28Z"
+                        fill="url(#logoCustomerConnect)"
+                        fill-opacity="0.22"
+                        stroke="url(#logoCustomerConnect)"
+                        stroke-width="2.6"
+                        stroke-linejoin="round"
+                      />
+                      <circle cx="37" cy="28" r="3" fill="#E9D5FF" />
+                      <circle cx="44" cy="28" r="3" fill="#C084FC" />
+                      <circle cx="51" cy="28" r="3" fill="#818CF8" />
+                      <path
+                        d="M24 53C28 49 33 47 39 47"
+                        stroke="#A855F7"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M64 53C60 49 55 47 49 47"
+                        stroke="#6366F1"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Customer Connect</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="healthcare"
+                >
+                  <span class="tool-card__cat">Healthcare Support</span>
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoCareConnect"
+                          x1="10"
+                          y1="8"
+                          x2="78"
+                          y2="64"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#F472B6" />
+                          <stop offset="55%" stop-color="#A855F7" />
+                          <stop offset="100%" stop-color="#38BDF8" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(244, 114, 182, 0.12)"
+                        stroke="rgba(244, 114, 182, 0.35)"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M44 54C44 54 22 41.2 22 27.5C22 21.4 26.8 17 32.6 17C36.5 17 40.1 19 42.2 22.1C43.1 23.4 44.9 23.4 45.8 22.1C47.9 19 51.5 17 55.4 17C61.2 17 66 21.4 66 27.5C66 41.2 44 54 44 54Z"
+                        fill="url(#logoCareConnect)"
+                        fill-opacity="0.22"
+                        stroke="url(#logoCareConnect)"
+                        stroke-width="2.6"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M36 33H41L43.5 27L46.5 38L49 32H53"
+                        stroke="#FDF2F8"
+                        stroke-width="2.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Care Connect</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="healthcare"
+                >
+                  <span class="tool-card__cat">Healthcare Support</span>
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoQuest"
+                          x1="12"
+                          y1="10"
+                          x2="74"
+                          y2="62"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#4ADE80" />
+                          <stop offset="100%" stop-color="#0EA5E9" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(74, 222, 128, 0.11)"
+                        stroke="rgba(74, 222, 128, 0.34)"
+                        stroke-width="1.5"
+                      />
+                      <circle
+                        cx="41"
+                        cy="34"
+                        r="15"
+                        stroke="url(#logoQuest)"
+                        stroke-width="4.2"
+                      />
+                      <path
+                        d="M44 37L59 52"
+                        stroke="url(#logoQuest)"
+                        stroke-width="4.5"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="41"
+                        cy="34"
+                        r="6"
+                        fill="#4ADE80"
+                        fill-opacity="0.3"
+                      />
+                      <path
+                        d="M35 23C38 20.8 42.5 20.5 46 22"
+                        stroke="#BBF7D0"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Quest</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="healthcare"
+                >
+                  <span class="tool-card__cat">Healthcare Support</span>
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoEIP"
+                          x1="10"
+                          y1="10"
+                          x2="78"
+                          y2="62"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#A78BFA" />
+                          <stop offset="100%" stop-color="#38BDF8" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(139, 92, 246, 0.14)"
+                        stroke="rgba(167, 139, 250, 0.36)"
+                        stroke-width="1.5"
+                      />
+                      <rect
+                        x="18"
+                        y="18"
+                        width="52"
+                        height="36"
+                        rx="10"
+                        fill="url(#logoEIP)"
+                        fill-opacity="0.16"
+                        stroke="url(#logoEIP)"
+                        stroke-width="2.2"
+                      />
+                      <text
+                        x="44"
+                        y="42"
+                        text-anchor="middle"
+                        fill="#F8FAFC"
+                        font-family="Plus Jakarta Sans, sans-serif"
+                        font-weight="800"
+                        font-size="20"
+                        letter-spacing="1.5"
+                      >
+                        EIP
+                      </text>
+                      <circle cx="24" cy="24" r="2.2" fill="#38BDF8" />
+                      <circle cx="64" cy="48" r="2.2" fill="#C084FC" />
+                    </svg>
+                  </div>
+                  <h3>EIP</h3>
+                </article>
+
+                <!-- Provider Information -->
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="provider"
+                >
+                  <span class="tool-card__cat tool-card__cat--blue"
+                    >Provider Information</span
+                  >
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoProviderConnect"
+                          x1="10"
+                          y1="8"
+                          x2="78"
+                          y2="62"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#60A5FA" />
+                          <stop offset="100%" stop-color="#22D3EE" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(59, 130, 246, 0.14)"
+                        stroke="rgba(96, 165, 250, 0.36)"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M22 34L44 17L66 34V53C66 54.657 64.657 56 63 56H25C23.343 56 22 54.657 22 53V34Z"
+                        fill="url(#logoProviderConnect)"
+                        fill-opacity="0.18"
+                        stroke="url(#logoProviderConnect)"
+                        stroke-width="2.5"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M44 31V45M37 38H51"
+                        stroke="#E0F2FE"
+                        stroke-width="3.2"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="65"
+                        cy="22"
+                        r="4.5"
+                        fill="#22D3EE"
+                        stroke="#0B1124"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Provider Connect</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="provider"
+                >
+                  <span class="tool-card__cat tool-card__cat--blue"
+                    >Provider Information</span
+                  >
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoNPI"
+                          x1="10"
+                          y1="10"
+                          x2="78"
+                          y2="62"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#3B82F6" />
+                          <stop offset="100%" stop-color="#1D4ED8" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(37, 99, 235, 0.16)"
+                        stroke="rgba(96, 165, 250, 0.38)"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M20 20H68V47C68 50.866 64.866 54 61 54H27C23.134 54 20 50.866 20 47V20Z"
+                        fill="url(#logoNPI)"
+                        fill-opacity="0.28"
+                        stroke="#60A5FA"
+                        stroke-width="2.2"
+                      />
+                      <path
+                        d="M20 20H68V26H20V20Z"
+                        fill="#EF4444"
+                        fill-opacity="0.85"
+                      />
+                      <text
+                        x="44"
+                        y="45"
+                        text-anchor="middle"
+                        fill="#F8FAFC"
+                        font-family="Plus Jakarta Sans, sans-serif"
+                        font-weight="800"
+                        font-size="18"
+                        letter-spacing="1.8"
+                      >
+                        NPI
+                      </text>
+                    </svg>
+                  </div>
+                  <h3>NPI Registry</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="provider"
+                >
+                  <span class="tool-card__cat tool-card__cat--blue"
+                    >Provider Information</span
+                  >
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoNationalDir"
+                          x1="14"
+                          y1="10"
+                          x2="74"
+                          y2="62"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#38BDF8" />
+                          <stop offset="100%" stop-color="#6366F1" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(56, 189, 248, 0.13)"
+                        stroke="rgba(56, 189, 248, 0.35)"
+                        stroke-width="1.5"
+                      />
+                      <circle
+                        cx="44"
+                        cy="36"
+                        r="18"
+                        fill="url(#logoNationalDir)"
+                        fill-opacity="0.18"
+                        stroke="url(#logoNationalDir)"
+                        stroke-width="2.4"
+                      />
+                      <ellipse
+                        cx="44"
+                        cy="36"
+                        rx="8.5"
+                        ry="18"
+                        stroke="url(#logoNationalDir)"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M26 36H62M29 27H59M29 45H59"
+                        stroke="#BAE6FD"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="57"
+                        cy="23"
+                        r="4"
+                        fill="#38BDF8"
+                        stroke="#0B1124"
+                        stroke-width="1.8"
+                      />
+                    </svg>
+                  </div>
+                  <h3>National Directory</h3>
+                </article>
+
+                <!-- Insurance & Claims -->
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="insurance"
+                >
+                  <span class="tool-card__cat tool-card__cat--cyan"
+                    >Insurance &amp; Claims</span
+                  >
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoDiamond"
+                          x1="16"
+                          y1="12"
+                          x2="72"
+                          y2="60"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#67E8F9" />
+                          <stop offset="50%" stop-color="#38BDF8" />
+                          <stop offset="100%" stop-color="#818CF8" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(34, 211, 238, 0.13)"
+                        stroke="rgba(103, 232, 249, 0.36)"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M30 18H58L68 31L44 56L20 31L30 18Z"
+                        fill="url(#logoDiamond)"
+                        fill-opacity="0.24"
+                        stroke="url(#logoDiamond)"
+                        stroke-width="2.5"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M20 31H68M30 18L36 31L44 56L52 31L58 18"
+                        stroke="#BAE6FD"
+                        stroke-width="1.8"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Diamond</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="insurance"
+                >
+                  <span class="tool-card__cat tool-card__cat--cyan"
+                    >Insurance &amp; Claims</span
+                  >
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoHIPAA"
+                          x1="16"
+                          y1="10"
+                          x2="72"
+                          y2="62"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#2DD4BF" />
+                          <stop offset="100%" stop-color="#3B82F6" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(45, 212, 191, 0.12)"
+                        stroke="rgba(45, 212, 191, 0.36)"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M44 15L62 22V35C62 46.5 54 53.8 44 57C34 53.8 26 46.5 26 35V22L44 15Z"
+                        fill="url(#logoHIPAA)"
+                        fill-opacity="0.22"
+                        stroke="url(#logoHIPAA)"
+                        stroke-width="2.5"
+                        stroke-linejoin="round"
+                      />
+                      <rect
+                        x="37"
+                        y="33"
+                        width="14"
+                        height="11"
+                        rx="3"
+                        fill="#CCFBF1"
+                        fill-opacity="0.9"
+                      />
+                      <path
+                        d="M40 33V29.5C40 27.3 41.8 25.5 44 25.5C46.2 25.5 48 27.3 48 29.5V33"
+                        stroke="#CCFBF1"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>HIPAA Claims Repository</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="insurance"
+                >
+                  <span class="tool-card__cat tool-card__cat--cyan"
+                    >Insurance &amp; Claims</span
+                  >
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoBenefits"
+                          x1="14"
+                          y1="10"
+                          x2="74"
+                          y2="62"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#A855F7" />
+                          <stop offset="100%" stop-color="#22D3EE" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(56, 189, 248, 0.12)"
+                        stroke="rgba(168, 85, 247, 0.35)"
+                        stroke-width="1.5"
+                      />
+                      <rect
+                        x="22"
+                        y="18"
+                        width="44"
+                        height="36"
+                        rx="8"
+                        fill="url(#logoBenefits)"
+                        fill-opacity="0.2"
+                        stroke="url(#logoBenefits)"
+                        stroke-width="2.4"
+                      />
+                      <path
+                        d="M30 29H46M30 37H41"
+                        stroke="#E0F2FE"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="54"
+                        cy="40"
+                        r="7"
+                        fill="#0B1124"
+                        stroke="#22D3EE"
+                        stroke-width="2.2"
+                      />
+                      <path
+                        d="M51 40L53.2 42.2L57.5 38"
+                        stroke="#67E8F9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Benefits Viewer</h3>
+                </article>
+
+                <article
+                  class="glass-card tool-card tool-card--logo reveal"
+                  data-category="insurance"
+                >
+                  <span class="tool-card__cat tool-card__cat--cyan"
+                    >Insurance &amp; Claims</span
+                  >
+                  <div class="tool-card__logo" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 88 72"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="logoAvaility"
+                          x1="12"
+                          y1="12"
+                          x2="76"
+                          y2="60"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stop-color="#F26726" />
+                          <stop offset="100%" stop-color="#FB923C" />
+                        </linearGradient>
+                      </defs>
+                      <rect
+                        x="6"
+                        y="6"
+                        width="76"
+                        height="60"
+                        rx="18"
+                        fill="rgba(19, 56, 102, 0.48)"
+                        stroke="rgba(242, 103, 38, 0.45)"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M21 47L34 21L46 47"
+                        stroke="#FFFFFF"
+                        stroke-width="3.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M25.5 39H41.5"
+                        stroke="#F26726"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M47 32C53 26 61 26 67 32"
+                        stroke="url(#logoAvaility)"
+                        stroke-width="2.8"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="51" cy="39" r="3.4" fill="#F26726" />
+                      <circle cx="63" cy="25" r="3.4" fill="#38BDF8" />
+                      <path
+                        d="M51 39L63 25"
+                        stroke="#93C5FD"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Availity</h3>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Samples Section -->
+      <section class="section" id="work-samples">
+        <div class="container">
+          <div class="samples-head">
+            <div class="section-header reveal">
+              <span class="section-eyebrow">Practice Portfolio</span>
+              <h2 class="section-title">
+                <span class="text-gradient">Work Samples</span>
+              </h2>
+              <p class="section-subtitle">
+                Personal demonstrations created to showcase structured
+                documentation, communication clarity, and healthcare workflows.
+              </p>
+            </div>
+            <div
+              class="samples-controls reveal"
+              aria-label="Work sample carousel controls"
+            >
+              <button
+                class="scroll-btn"
+                id="samplesPrev"
+                type="button"
+                aria-label="Previous work samples"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button
+                class="scroll-btn"
+                id="samplesNext"
+                type="button"
+                aria-label="Next work samples"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="samples-track" id="samplesTrack">
+            <article class="glass-card project-card sample-slide reveal">
+              <div
+                class="project-card__preview preview-theme-1"
+                aria-hidden="true"
+              >
+                <div class="preview-window">
+                  <div class="preview-window__bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="preview-window__lines">
+                    <div class="line w-70"></div>
+                    <div class="line w-90"></div>
+                    <div class="line w-55"></div>
+                    <div class="preview-badges">
+                      <span>Inquiry ID</span><span>Resolved</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="demo-badge">Work Sample &bull; Personal Demo</span>
+                <h3>Customer Inquiry Documentation</h3>
+                <p>
+                  Structured call and chat summary template demonstrating
+                  concise issue capture, verification notes, and resolution
+                  tracking.
+                </p>
+                <button
+                  class="project-card__btn"
+                  type="button"
+                  data-project="inquiry-doc"
+                >
+                  <span>View Sample Structure</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass-card project-card sample-slide reveal">
+              <div
+                class="project-card__preview preview-theme-2"
+                aria-hidden="true"
+              >
+                <div class="preview-window">
+                  <div class="preview-window__bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="preview-steps">
+                    <div class="step-pill">1. Identity Check</div>
+                    <div class="step-pill">2. Policy Status</div>
+                    <div class="step-pill">3. Benefits Summary</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="demo-badge">Work Sample &bull; Personal Demo</span>
+                <h3>Healthcare Insurance Verification Workflow</h3>
+                <p>
+                  Step-by-step practice guide outlining how to check active
+                  coverage, benefits details, and provider network status
+                  accurately.
+                </p>
+                <button
+                  class="project-card__btn"
+                  type="button"
+                  data-project="insurance-workflow"
+                >
+                  <span>View Sample Workflow</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass-card project-card sample-slide reveal">
+              <div
+                class="project-card__preview preview-theme-3"
+                aria-hidden="true"
+              >
+                <div class="preview-window">
+                  <div class="preview-window__bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="preview-window__lines">
+                    <div class="line w-45 accent"></div>
+                    <div class="line w-85"></div>
+                    <div class="line w-75"></div>
+                    <div class="line w-60"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="demo-badge">Work Sample &bull; Personal Demo</span>
+                <h3>Sample Customer Service Email Responses</h3>
+                <p>
+                  Collection of empathetic, privacy-conscious non-voice
+                  templates for status updates, clarifications, and follow-up
+                  messages.
+                </p>
+                <button
+                  class="project-card__btn"
+                  type="button"
+                  data-project="email-responses"
+                >
+                  <span>View Email Samples</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass-card project-card sample-slide reveal">
+              <div
+                class="project-card__preview preview-theme-4"
+                aria-hidden="true"
+              >
+                <div class="preview-window">
+                  <div class="preview-window__bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="preview-window__lines">
+                    <div class="line w-60 accent"></div>
+                    <div class="line w-90"></div>
+                    <div class="line w-80"></div>
+                    <div class="preview-badges">
+                      <span>SOP Draft</span><span>Privacy Check</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="demo-badge">Work Sample &bull; Personal Demo</span>
+                <h3>Healthcare Support Process Documentation</h3>
+                <p>
+                  Personal demonstration playbook organizing standard call
+                  opening, verification checkpoints, and escalation handoff
+                  steps.
+                </p>
+                <button
+                  class="project-card__btn"
+                  type="button"
+                  data-project="process-doc"
+                >
+                  <span>View Process Outline</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass-card project-card sample-slide reveal">
+              <div
+                class="project-card__preview preview-theme-5"
+                aria-hidden="true"
+              >
+                <div class="preview-window">
+                  <div class="preview-window__bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="preview-table">
+                    <div class="table-row">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="table-row">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="table-row">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="demo-badge">Work Sample &bull; Personal Demo</span>
+                <h3>Data Entry and Record Management</h3>
+                <p>
+                  Mock spreadsheet and CRM record hygiene exercise demonstrating
+                  clean formatting, duplicate checks, and organized updates.
+                </p>
+                <button
+                  class="project-card__btn"
+                  type="button"
+                  data-project="data-management"
+                >
+                  <span>View Record Sample</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="glass-card project-card sample-slide reveal">
+              <div
+                class="project-card__preview preview-theme-6"
+                aria-hidden="true"
+              >
+                <div class="preview-window">
+                  <div class="preview-window__bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="preview-bars">
+                    <span style="height: 45%"></span>
+                    <span style="height: 75%"></span>
+                    <span style="height: 60%"></span>
+                    <span style="height: 90%"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="demo-badge">Work Sample &bull; Personal Demo</span>
+                <h3>Sample Customer Interaction Reports</h3>
+                <p>
+                  Practice daily summary log categorizing inquiry types,
+                  resolution status, and follow-up actions for team visibility.
+                </p>
+                <button
+                  class="project-card__btn"
+                  type="button"
+                  data-project="interaction-reports"
+                >
+                  <span>View Report Sample</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education and Skills Section -->
+      <section class="section" id="education-skills">
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <span class="section-eyebrow">Background &amp; Strengths</span>
+            <h2 class="section-title">
+              Education &amp; <span class="text-gradient">Core Skills</span>
+            </h2>
+          </div>
+
+          <div class="edu-skills__grid">
+            <!-- Education Card -->
+            <div class="glass-card education-card reveal">
+              <div class="education-card__header">
+                <div class="education-card__icon" aria-hidden="true">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                </div>
+                <span class="education-card__years">2021 &ndash; 2025</span>
+              </div>
+
+              <span class="education-card__label">Academic Degree</span>
+              <h3>Bachelor of Elementary Education</h3>
+              <p class="education-card__school">
+                Agusan del Sur State College of Agriculture and Technology
+              </p>
+              <div
+                class="education-distinctions"
+                aria-label="Education distinctions"
+              >
+                <span class="honor-badge">Cum Laude</span>
+                <span class="credential-badge"
+                  >Professional Teacher &ndash; Elementary</span
+                >
+              </div>
+
+              <div class="education-card__note">
+                <p>
+                  Built strong foundations in structured communication, active
+                  listening, instructional clarity, organization, and patient
+                  guidance &mdash; skills that translate directly into
+                  empathetic healthcare customer support.
+                </p>
+              </div>
+            </div>
+
+            <!-- Progress-Free Animated Skill Cards / Tags -->
+            <div class="glass-card skills-card reveal">
+              <div class="skills-card__header">
+                <h3>Professional Competencies</h3>
+                <p>
+                  Key strengths applied across voice, non-voice, healthcare, and
+                  administrative support.
+                </p>
+              </div>
+
+              <div class="skills-grid" aria-label="Skills List">
+                <div class="skill-chip">Customer Communication</div>
+                <div class="skill-chip">Active Listening</div>
+                <div class="skill-chip">Problem-Solving</div>
+                <div class="skill-chip">Healthcare Support</div>
+                <div class="skill-chip">Basic Health Insurance Knowledge</div>
+                <div class="skill-chip">Data Entry</div>
+                <div class="skill-chip">Multitasking</div>
+                <div class="skill-chip">Time Management</div>
+                <div class="skill-chip">Attention to Detail</div>
+                <div class="skill-chip">Adaptability</div>
+                <div class="skill-chip">Confidentiality</div>
+                <div class="skill-chip">Organization and Prioritization</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-shell glass-card reveal">
+            <div class="contact-shell__glow" aria-hidden="true"></div>
+
+            <div class="contact__grid">
+              <div class="contact__info">
+                <span class="section-eyebrow">Get In Touch</span>
+                <h2 class="section-title">
+                  Ready to Support <span class="text-gradient">Your Team</span>
+                </h2>
+                <p class="contact__lead">
+                  Open to opportunities in Healthcare Virtual Assistance,
+                  Customer Support, Healthcare Administration, and Insurance
+                  Support.
+                </p>
+
+                <ul class="contact-list">
+                  <li>
+                    <span class="contact-list__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <span class="contact-list__label">Phone</span>
+                      <a href="tel:+63973631744">+63 973 631 744</a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="contact-list__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        />
+                        <polyline points="22,6 12,13 2,6" />
+                      </svg>
+                    </span>
+                    <div>
+                      <span class="contact-list__label">Email</span>
+                      <a href="mailto:janinegraceplaga21@gmail.com"
+                        >janinegraceplaga21@gmail.com</a
+                      >
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="contact-list__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                      </svg>
+                    </span>
+                    <div>
+                      <span class="contact-list__label">LinkedIn</span>
+                      <a
+                        href="https://www.linkedin.com/in/janine-grace-plaga-1b8a2138a/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >linkedin.com/in/janinegraceplaga</a
+                      >
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="contact-list__icon" aria-hidden="true">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                    </span>
+                    <div>
+                      <span class="contact-list__label">Location</span>
+                      <span>Davao City, Philippines</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="senderName">Your Name</label>
+                    <input
+                      type="text"
+                      id="senderName"
+                      name="name"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="senderEmail">Email Address</label>
+                    <input
+                      type="email"
+                      id="senderEmail"
+                      name="email"
+                      placeholder="you@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiryTopic">Opportunity / Inquiry Type</label>
+                  <select id="inquiryTopic" name="topic">
+                    <option value="Healthcare Virtual Assistance">
+                      Healthcare Virtual Assistance
+                    </option>
+                    <option value="Customer Support Representative">
+                      Customer Support Representative
+                    </option>
+                    <option value="Healthcare Administration">
+                      Healthcare Administration
+                    </option>
+                    <option value="Insurance Support">Insurance Support</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage">Message</label>
+                  <textarea
+                    id="senderMessage"
+                    name="message"
+                    rows="4"
+                    placeholder="Share role details, support hours, or how I can assist your team..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn--gradient btn--lg btn--full"
+                >
+                  <span>Let's Work Together</span>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </button>
+
+                <p
+                  class="form-feedback"
+                  id="formFeedback"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="brand__name">Janine Grace </span>
+          <span class="footer__role">| Healthcare Customer Support </span>
+        </div>
+        <p class="footer__copy">&copy; <span id="currentYear"></span></p>
+      </div>
+    </footer>
+
+    <!-- Work Sample Modal -->
+    <div
+      class="modal-backdrop"
+      id="projectModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-dialog glass-card">
+        <div class="modal-dialog__header">
+          <div>
+            <span class="demo-badge" id="modalBadge"
+              >Work Sample &bull; Personal Demo</span
+            >
+            <h3 id="modalTitle">Sample Title</h3>
+          </div>
+          <button
+            class="modal-close"
+            id="modalClose"
+            type="button"
+            aria-label="Close sample modal"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-dialog__body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
