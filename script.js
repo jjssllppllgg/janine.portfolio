@@ -42,9 +42,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const customCursor = document.getElementById("customCursor");
   if (customCursor && !prefersReducedMotion) {
     document.addEventListener("pointermove", (event) => {
-      if (event.pointerType !== "mouse") return;
       customCursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0) translate(-50%, -50%)`;
       customCursor.classList.add("is-visible");
+    }, { passive: true });
+
+    let touchCursorTimer = null;
+    document.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "touch") {
+        customCursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0) translate(-50%, -50%)`;
+        customCursor.classList.add("is-visible", "is-grabbing");
+        window.clearTimeout(touchCursorTimer);
+        touchCursorTimer = window.setTimeout(() => {
+          customCursor.classList.remove("is-visible", "is-grabbing");
+        }, 700);
+      }
     }, { passive: true });
 
     document.addEventListener("pointerout", (event) => {
@@ -129,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       document.addEventListener("pointermove", (event) => {
-        if (event.pointerType !== "mouse") return;
         if (event.timeStamp - lastEmissionTime < 16) return;
         lastEmissionTime = event.timeStamp;
 
@@ -483,8 +493,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const normX = x / rect.width - 0.5;
         const normY = y / rect.height - 0.5;
 
-        const rotateY = normX * 10;
-        const rotateX = -normY * 10;
+        const tiltAmount = event.pointerType === "touch" ? 6 : 10;
+        const rotateY = normX * tiltAmount;
+        const rotateX = -normY * tiltAmount;
 
         card.style.setProperty("--mouse-x", `${x}px`);
         card.style.setProperty("--mouse-y", `${y}px`);
@@ -496,12 +507,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      card.addEventListener("pointerdown", (event) => {
+        if (event.pointerType !== "touch") return;
+        const rect = card.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+        card.style.transition = "transform 0.12s ease-out";
+        card.style.transform = "perspective(900px) scale(0.985)";
+      }, { passive: true });
+
       card.addEventListener("pointerleave", () => {
         card.style.transform = "";
         card.style.transition = "";
         if (logo) {
           logo.style.transform = "";
         }
+      });
+
+      card.addEventListener("pointerup", () => {
+        card.style.transform = "";
+        card.style.transition = "";
+        if (logo) logo.style.transform = "";
+      });
+
+      card.addEventListener("pointercancel", () => {
+        card.style.transform = "";
+        card.style.transition = "";
+        if (logo) logo.style.transform = "";
       });
     });
   }
