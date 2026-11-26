@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       };
 
-      document.addEventListener("pointermove", (event) => {
+      const emitTrail = (event) => {
         if (event.timeStamp - lastEmissionTime < 16) return;
         lastEmissionTime = event.timeStamp;
 
@@ -182,7 +182,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (trailFrame === null) {
           trailFrame = window.requestAnimationFrame(drawTrail);
         }
-      }, { passive: true });
+      };
+
+      document.addEventListener("pointermove", emitTrail, { passive: true });
+      document.addEventListener("pointerdown", emitTrail, { passive: true });
 
       window.addEventListener("resize", resizeTrail);
       resizeTrail();
