@@ -2274,16 +2274,36 @@ img {
   .tools-conveyor {
     width: calc(100vw - 1.25rem);
     margin-inline: calc(50% - 50vw + 0.625rem);
-    overflow-x: hidden;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-mask-image: none;
+    mask-image: none;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(168, 85, 247, 0.5) rgba(255, 255, 255, 0.05);
   }
 
   .tools-conveyor__track {
-    animation-duration: 28s;
+    width: max-content;
+    animation: none;
+    transform: none;
+  }
+
+  .tools-conveyor__group[aria-hidden="true"] {
+    display: none;
   }
 
   .tools-conveyor__group {
     gap: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .tools-conveyor::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .tools-conveyor::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #a855f7, #38bdf8);
+    border-radius: 999px;
   }
 
   .sample-slide {

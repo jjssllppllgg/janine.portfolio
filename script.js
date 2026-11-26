@@ -490,6 +490,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const logo = card.querySelector(".tool-card__logo");
 
       card.addEventListener("pointermove", (event) => {
+        if (event.pointerType === "touch" && card.classList.contains("tool-card")) return;
+
         const rect = card.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
@@ -511,7 +513,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       card.addEventListener("pointerdown", (event) => {
-        if (event.pointerType !== "touch") return;
+        if (event.pointerType !== "touch" || card.classList.contains("tool-card")) return;
         const rect = card.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
