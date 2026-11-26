@@ -1000,10 +1000,10 @@ img {
   width: 54px;
   height: 54px;
   border-radius: 15px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
+  margin: 0 auto 1.25rem;
   color: #ffffff;
 }
 
@@ -1017,11 +1017,13 @@ img {
 .service-card h3 {
   font-size: 1.12rem;
   margin-bottom: 0.6rem;
+  text-align: center;
 }
 
 .service-card p {
   font-size: 0.93rem;
   color: var(--text-secondary);
+  text-align: center;
 }
 
 /* ==========================================================================
